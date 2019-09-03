@@ -1,0 +1,42 @@
+<odoo>
+    <record id="employee_id_card_view_list" model="ir.ui.view">
+        <field name="name">Employee Id Card</field>
+        <field name="model">employee.id.card</field>
+        <field name="arch" type="xml">
+            <tree string="employee_id_card">
+                <field name="name"/>
+                <field name="card_type"/>
+                <field name="id_number"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="employee_id_card_form_list" model="ir.ui.view">
+        <field name="name">Employee Id Card</field>
+        <field name="model">employee.id.card</field>
+        <field name="arch" type="xml">
+            <form string="employee_id_card">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                         <field name="card_type"/>
+                        <field name="id_number"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="employee_id_card" model="ir.actions.act_window">
+        <field name="name">Employee Id Card</field>
+        <field name="res_model">employee.id.card</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        name="Employee ID Card"
+        id="employee_id_card_menu"
+        sequence="5"
+        action="employee_id_card"/>
+</odoo>
+

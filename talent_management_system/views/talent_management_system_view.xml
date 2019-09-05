@@ -1,0 +1,48 @@
+<odoo>
+    <record id="talent_management_system_view_list" model="ir.ui.view">
+        <field name="name">Talent Management System</field>
+        <field name="model">talent.management.system</field>
+        <field name="arch" type="xml">
+            <tree string="talent_management_system">
+                <field name="employee_id"/>
+                <field name="name"/>
+                <field name="department_id"/>
+                <field name="email"/>
+                <field name="role_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="talent_management_system_form_list" model="ir.ui.view">
+        <field name="name">Talent Management System</field>
+        <field name="model">talent.management.system</field>
+        <field name="arch" type="xml">
+            <form string="talent_management_system">
+                <sheet>
+                    <group>
+                        <field name="employee_id"/>
+                        <field name="name"/>
+                        <field name="department_id"/>
+                        <field name="email"/>
+                        <field name="role_name"/>
+                        <field name="start_date"/>
+                        <field name="service_time"/>
+                        <field name="employee_skills"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="talent_management_system" model="ir.actions.act_window">
+        <field name="name">Talent Management System</field>
+        <field name="res_model">talent.management.system</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            name="Talent Management System"
+            id="talent_management_system_menu"
+            sequence="5"
+            action="talent_management_system"/>
+</odoo>

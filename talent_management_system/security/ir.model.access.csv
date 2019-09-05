@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_talent_management_system_user,talent_management_system.user,model_talent_management_system,group_talent_management_system_user,1,0,1,0
+access_skills_user,skills.user,model_skills,group_talent_management_system_user,1,0,1,0
+access_talent_management_system_manager,talent_management_system.manager,model_talent_management_system,group_talent_management_system_manager,1,1,1,1
+access_skills_manager,skills.manager,model_skills,group_talent_management_system_manager,1,1,1,1
